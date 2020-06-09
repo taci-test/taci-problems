@@ -6,7 +6,7 @@ function countVowels(str) {
     var obj = {};
 
     if (!matches) {
-        return "";
+        return {};
     }
 
     // iterate through the str
