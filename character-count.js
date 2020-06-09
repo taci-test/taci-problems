@@ -3,7 +3,7 @@ function characterCount(arr) {
     var obj = {}
     for (var i = 0; i < arr.length; i++) {
         var key = arr[i].length;
-        if (!obj[key]) {
+        if (obj[key] == null) {
             obj[key] = 1
         } else {
             obj[key] += 1;
