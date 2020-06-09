@@ -1,16 +1,19 @@
 function fizzBuzz(num) {
 
+        var output = "";
         if (num % 3 === 0 && num % 5 === 0) {
-            return "FizzBuzz";
-        } else if (num % 3 === 0) {
-            return "Fizz";
-        } else if (num % 5 === 0) {
-            return "Buzz";
-        } else {
-            return num;
+            output += "FizzBuzz";
         }
-
-    
+        if (num % 3 === 0) {
+            output += "Fizz";
+        }
+        if (num % 5 === 0) {
+            output += "Buzz";
+        }
+        if (!output) {
+            output = num;
+        }
+        return output;
 }
 console.log(fizzBuzz(6)); // "Fizz"
 console.log(fizzBuzz(10)); // "Buzz"

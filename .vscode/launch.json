@@ -13,7 +13,7 @@
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${workspaceFolder}/fizzbuzz.js"
+            "program": "${workspaceFolder}/count-vowels.js"
         }
     ]
 }

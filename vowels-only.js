@@ -4,13 +4,12 @@
 function vowelsOnly(str) {
 
     var matches = str.match(/[aeiou]/gi);
-    // console.log("matches", matches);
-
-    var newStr = "";
 
     if (!matches) {
         return "";
     }
+
+    var newStr = "";
 
     for (var i = 0; i < matches.length; i++) {
         newStr = newStr + matches[i];
